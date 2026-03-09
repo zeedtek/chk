@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 stopuser = {}
 token = "8016353996:AAGw1xpKsum6eTBmFasbIEilPNcbetZ278c" #توكنك هنا
 bot=telebot.TeleBot(token,parse_mode="HTML")
-admin=5000510953 #ايدي الادمن بدون علامات تنصيص
+admin= 5000510953 #ايدي الادمن بدون علامات تنصيص
 active_scans = set()
 command_usage = {}
 def reset_command_usage():
@@ -76,7 +76,7 @@ def start(message):
 	''',reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/+WwjBeTcnFz0yZWVi")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/+W8t_2mwUZsk0ZjVk")
 		keyboard.add(contact_button)
 		username = message.from_user.first_name
 		bot.send_message(chat_id=message.chat.id, text='''اشتراكك فعال ويمكنك استخدام 
@@ -127,12 +127,12 @@ def main(message):
 			with open('data.json', 'w') as json_file:
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/FJ0FF")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/theonlyziad")
 			keyboard.add(contact_button)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : @theonlyziad
 </b>
 	''',reply_markup=keyboard)
 			return
@@ -143,12 +143,12 @@ def main(message):
 			provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 		except Exception as e:
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/FJ0FF")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/theonlyziad")
 			keyboard.add(contact_button)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : @theonlyziad
 </b>
 	''',reply_markup=keyboard)
 			return
@@ -156,7 +156,7 @@ def main(message):
 		required_duration = timedelta(hours=0)
 		if current_time - provided_time > required_duration:
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/FJ0FF")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/theonlyziad")
 			keyboard.add(contact_button)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 		''',reply_markup=keyboard)
@@ -203,7 +203,7 @@ def menu_callback(call):
 			}
 				for cc in lino:
 					if stopuser[f'{id}']['status'] == 'stop':
-						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @FJ0FF')
+						bot.edit_message_text(chat_id=call.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @theonlyziad')
 						return
 					info = str(dato(cc[:6]))
 					start_time = time.time()
@@ -230,7 +230,7 @@ def menu_callback(call):
 					bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
 					  text=f'''𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 𝙒𝙝𝙞𝙡𝙚 𝙔𝙤𝙪𝙧 𝘾𝙖𝙧𝙙𝙨 𝘼𝙧𝙚 𝘽𝙚𝙞𝙣𝙜 𝘾𝙝𝙚𝙘𝙠 𝘼𝙩 𝙏𝙝𝙚 𝙂𝙖𝙩𝙚𝙬𝙖𝙮 {gate}
-𝘽𝙤𝙩 𝘽𝙮 @FJ0FF''', reply_markup=mes)
+𝘽𝙤𝙩 𝘽𝙮 @theonlyziad''', reply_markup=mes)
 					
 					
 					msgc=f'''<b>CCN ☑️
@@ -240,7 +240,7 @@ def menu_callback(call):
 • Gateway : {gate}
 {info}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : @theonlyziad</b>'''
 
 					if 'Approved ✅' in last or 'Insufficient funds' in last:
 						live += 1
@@ -253,7 +253,7 @@ def menu_callback(call):
 {info}
 • Vbv : {vbvv}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : @theonlyziad</b>'''
 						bot.send_message(call.from_user.id, msg)
 					elif 'security code is incorrect' in last:
 						ccn+=1
@@ -269,7 +269,7 @@ def menu_callback(call):
 		stopuser[f'{id}']['status'] = 'start'
 		bot.edit_message_text(chat_id=call.message.chat.id, 
 					  message_id=call.message.message_id, 
-					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @FJ0FF')
+					  text='𝗕𝗘𝗘𝗡 𝗖𝗢𝗠𝗣𝗟𝗘𝗧𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @theonlyziad')
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 
@@ -298,12 +298,12 @@ def respond_to_vbv(message):
 		BL='𝗙𝗥𝗘𝗘'
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/FJ0FF")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/theonlyziad")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي >> {name}
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : @theonlyziad
 </b>
 	''',reply_markup=keyboard)
 		return
@@ -314,12 +314,12 @@ def respond_to_vbv(message):
 		provided_time = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/FJ0FF")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/theonlyziad")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي >> {name}
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : @theonlyziad
 </b>
 	''',reply_markup=keyboard)
 		return
@@ -327,7 +327,7 @@ def respond_to_vbv(message):
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/FJ0FF")
+		contact_button = types.InlineKeyboardButton(text="✨ 𝗢𝗪𝗡𝗘𝗥  ✨", url="https://t.me/theonlyziad")
 		keyboard.add(contact_button)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 	''',reply_markup=keyboard)
@@ -376,7 +376,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 • Gateway : {gate}		
 {info}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : @theonlyziad</b>'''
 	msgd=f'''<b>Declined ❌
 			
 • Card : <code>{cc}</code>
@@ -384,7 +384,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 • Gateway : {gate}		
 {info}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : @theonlyziad</b>'''
 	if 'Approved' in last or 'Insufficient funds' in last:
 		vbvv = 'Error'
 		msg=f'''<b>Approved  ✅
@@ -395,7 +395,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 {info}
 • Vbv : {vbvv}
 • Time : {"{:.1f}".format(execution_time)}
-• Bot By : @FJ0FF</b>'''
+• Bot By : @theonlyziad</b>'''
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
 	elif 'security code is incorrect' in last:
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgc)
