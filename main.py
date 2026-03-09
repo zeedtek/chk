@@ -64,14 +64,14 @@ def start(message):
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)
 		if BL == '𝗙𝗥𝗘𝗘':	
 			keyboard = types.InlineKeyboardMarkup()
-			contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/+WwjBeTcnFz0yZWVi")
+			contact_button = types.InlineKeyboardButton(text="✨ 𝗝𝗢𝗜𝗡 ✨", url="https://t.me/+W8t_2mwUZsk0ZjVk")
 			keyboard.add(contact_button)
 			random_number = random.randint(33, 82)
 			photo_url = f'https://t.me/bkddgfsa/{random_number}'
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>
 اهلا بك عزيزي >> {name}
 البوت مدفوع وليس مجاني وسعر الاشتراك لليوم الكامل 2$
-للاشتراك و الاستفسار : @FJ0FF
+للاشتراك و الاستفسار : @theonlyziad
 </b>
 	''',reply_markup=keyboard)
 			return
